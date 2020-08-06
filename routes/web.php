@@ -13,8 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'HomeController@index');
+Route::get('/', 'DashboardController@index');
 
-Route::get('/register', 'AuthController@formulir');
-
-Route::post('/welcome', 'AuthController@welcome');
+Route::get('/data-tables', 'DashboardController@tables');
